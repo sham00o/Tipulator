@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC6AAE3E1C207BDC007868FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AAE3D1C207BDC007868FD /* AppDelegate.swift */; };
+		DC6AAE401C207BDC007868FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AAE3F1C207BDC007868FD /* ViewController.swift */; };
+		DC6AAE431C207BDC007868FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6AAE411C207BDC007868FD /* Main.storyboard */; };
+		DC6AAE451C207BDC007868FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6AAE441C207BDC007868FD /* Assets.xcassets */; };
+		DC6AAE481C207BDC007868FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6AAE461C207BDC007868FD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC6AAE3A1C207BDC007868FD /* Tipulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6AAE3D1C207BDC007868FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC6AAE3F1C207BDC007868FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC6AAE421C207BDC007868FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC6AAE441C207BDC007868FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6AAE471C207BDC007868FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC6AAE491C207BDC007868FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC6AAE371C207BDC007868FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC6AAE311C207BDC007868FD = {
+			isa = PBXGroup;
+			children = (
+				DC6AAE3C1C207BDC007868FD /* Tipulator */,
+				DC6AAE3B1C207BDC007868FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6AAE3B1C207BDC007868FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC6AAE3A1C207BDC007868FD /* Tipulator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6AAE3C1C207BDC007868FD /* Tipulator */ = {
+			isa = PBXGroup;
+			children = (
+				DC6AAE3D1C207BDC007868FD /* AppDelegate.swift */,
+				DC6AAE3F1C207BDC007868FD /* ViewController.swift */,
+				DC6AAE411C207BDC007868FD /* Main.storyboard */,
+				DC6AAE441C207BDC007868FD /* Assets.xcassets */,
+				DC6AAE461C207BDC007868FD /* LaunchScreen.storyboard */,
+				DC6AAE491C207BDC007868FD /* Info.plist */,
+			);
+			path = Tipulator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC6AAE391C207BDC007868FD /* Tipulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6AAE4C1C207BDC007868FD /* Build configuration list for PBXNativeTarget "Tipulator" */;
+			buildPhases = (
+				DC6AAE361C207BDC007868FD /* Sources */,
+				DC6AAE371C207BDC007868FD /* Frameworks */,
+				DC6AAE381C207BDC007868FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tipulator;
+			productName = Tipulator;
+			productReference = DC6AAE3A1C207BDC007868FD /* Tipulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC6AAE321C207BDC007868FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = iSam;
+				TargetAttributes = {
+					DC6AAE391C207BDC007868FD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DC6AAE351C207BDC007868FD /* Build configuration list for PBXProject "Tipulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC6AAE311C207BDC007868FD;
+			productRefGroup = DC6AAE3B1C207BDC007868FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC6AAE391C207BDC007868FD /* Tipulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC6AAE381C207BDC007868FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6AAE481C207BDC007868FD /* LaunchScreen.storyboard in Resources */,
+				DC6AAE451C207BDC007868FD /* Assets.xcassets in Resources */,
+				DC6AAE431C207BDC007868FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC6AAE361C207BDC007868FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6AAE401C207BDC007868FD /* ViewController.swift in Sources */,
+				DC6AAE3E1C207BDC007868FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC6AAE411C207BDC007868FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6AAE421C207BDC007868FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC6AAE461C207BDC007868FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6AAE471C207BDC007868FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC6AAE4A1C207BDC007868FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC6AAE4B1C207BDC007868FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC6AAE4D1C207BDC007868FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tipulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iSam.Tipulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC6AAE4E1C207BDC007868FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tipulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iSam.Tipulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC6AAE351C207BDC007868FD /* Build configuration list for PBXProject "Tipulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6AAE4A1C207BDC007868FD /* Debug */,
+				DC6AAE4B1C207BDC007868FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6AAE4C1C207BDC007868FD /* Build configuration list for PBXNativeTarget "Tipulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6AAE4D1C207BDC007868FD /* Debug */,
+				DC6AAE4E1C207BDC007868FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC6AAE321C207BDC007868FD /* Project object */;
+}
