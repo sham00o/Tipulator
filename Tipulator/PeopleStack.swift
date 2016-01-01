@@ -9,13 +9,43 @@
 import UIKit
 
 class PeopleStack: UIStackView {
+    
+    var selected : UITapGestureRecognizer!
+    var touch : UITapGestureRecognizer!
+    var people : [PersonView]!
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    convenience init() {
+        self.init(frame: CGRect.zero)
+        setup()
+    }
+    
+    func setup() {
+        people = [PersonView]()
+        contentMode = .ScaleAspectFit
+        userInteractionEnabled = true
+        addPerson()
+    }
+    
+    func addPerson() {
+        let person = PersonView()
+        person.touch = UITapGestureRecognizer(target: self, action: "highlight:")
+        self.addGestureRecognizer(person.touch)
+        people.append(person)
+    }
+    
+    func highlight(sender: UITapGestureRecognizer) {
+        selected = sender
+        print(sender.view)
+    }
 
 }
