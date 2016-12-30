@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Tipulator.xcodeproj">
+      location = "self:/Users/oyu127/personal/tipulator/Splitulator.xcodeproj">
    </FileRef>
 </Workspace>

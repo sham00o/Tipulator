@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297397881D7D34BC000BFD6E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297397871D7D34BC000BFD6E /* Home.swift */; };
+		2973978C1D7D4FD3000BFD6E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973978B1D7D4FD3000BFD6E /* Item.swift */; };
 		DC6AAE3E1C207BDC007868FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AAE3D1C207BDC007868FD /* AppDelegate.swift */; };
-		DC6AAE401C207BDC007868FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AAE3F1C207BDC007868FD /* ViewController.swift */; };
 		DC6AAE431C207BDC007868FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6AAE411C207BDC007868FD /* Main.storyboard */; };
 		DC6AAE451C207BDC007868FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6AAE441C207BDC007868FD /* Assets.xcassets */; };
 		DC6AAE481C207BDC007868FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6AAE461C207BDC007868FD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC6AAE3A1C207BDC007868FD /* Tipulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		297397871D7D34BC000BFD6E /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2973978B1D7D4FD3000BFD6E /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DC6AAE3A1C207BDC007868FD /* Splitulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6AAE3D1C207BDC007868FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC6AAE3F1C207BDC007868FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC6AAE421C207BDC007868FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6AAE441C207BDC007868FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6AAE471C207BDC007868FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 		DC6AAE311C207BDC007868FD = {
 			isa = PBXGroup;
 			children = (
-				DC6AAE3C1C207BDC007868FD /* Tipulator */,
+				DC6AAE3C1C207BDC007868FD /* Splitulator */,
 				DC6AAE3B1C207BDC007868FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +48,32 @@
 		DC6AAE3B1C207BDC007868FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC6AAE3A1C207BDC007868FD /* Tipulator.app */,
+				DC6AAE3A1C207BDC007868FD /* Splitulator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC6AAE3C1C207BDC007868FD /* Tipulator */ = {
+		DC6AAE3C1C207BDC007868FD /* Splitulator */ = {
 			isa = PBXGroup;
 			children = (
 				DC6AAE3D1C207BDC007868FD /* AppDelegate.swift */,
-				DC6AAE3F1C207BDC007868FD /* ViewController.swift */,
 				DC6AAE411C207BDC007868FD /* Main.storyboard */,
 				DC6AAE441C207BDC007868FD /* Assets.xcassets */,
 				DC6AAE461C207BDC007868FD /* LaunchScreen.storyboard */,
 				DC6AAE491C207BDC007868FD /* Info.plist */,
+				297397871D7D34BC000BFD6E /* Home.swift */,
+				2973978B1D7D4FD3000BFD6E /* Item.swift */,
 			);
+			name = Splitulator;
 			path = Tipulator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC6AAE391C207BDC007868FD /* Tipulator */ = {
+		DC6AAE391C207BDC007868FD /* Splitulator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC6AAE4C1C207BDC007868FD /* Build configuration list for PBXNativeTarget "Tipulator" */;
+			buildConfigurationList = DC6AAE4C1C207BDC007868FD /* Build configuration list for PBXNativeTarget "Splitulator" */;
 			buildPhases = (
 				DC6AAE361C207BDC007868FD /* Sources */,
 				DC6AAE371C207BDC007868FD /* Frameworks */,
@@ -79,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = Tipulator;
+			name = Splitulator;
 			productName = Tipulator;
-			productReference = DC6AAE3A1C207BDC007868FD /* Tipulator.app */;
+			productReference = DC6AAE3A1C207BDC007868FD /* Splitulator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,10 +99,11 @@
 				TargetAttributes = {
 					DC6AAE391C207BDC007868FD = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Q9775L87S9;
 					};
 				};
 			};
-			buildConfigurationList = DC6AAE351C207BDC007868FD /* Build configuration list for PBXProject "Tipulator" */;
+			buildConfigurationList = DC6AAE351C207BDC007868FD /* Build configuration list for PBXProject "Splitulator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC6AAE391C207BDC007868FD /* Tipulator */,
+				DC6AAE391C207BDC007868FD /* Splitulator */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6AAE401C207BDC007868FD /* ViewController.swift in Sources */,
+				297397881D7D34BC000BFD6E /* Home.swift in Sources */,
+				2973978C1D7D4FD3000BFD6E /* Item.swift in Sources */,
 				DC6AAE3E1C207BDC007868FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,10 +254,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iSam.Tipulator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Splitulator;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -259,17 +268,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iSam.Tipulator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Splitulator;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC6AAE351C207BDC007868FD /* Build configuration list for PBXProject "Tipulator" */ = {
+		DC6AAE351C207BDC007868FD /* Build configuration list for PBXProject "Splitulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6AAE4A1C207BDC007868FD /* Debug */,
@@ -278,13 +290,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC6AAE4C1C207BDC007868FD /* Build configuration list for PBXNativeTarget "Tipulator" */ = {
+		DC6AAE4C1C207BDC007868FD /* Build configuration list for PBXNativeTarget "Splitulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC6AAE4D1C207BDC007868FD /* Debug */,
 				DC6AAE4E1C207BDC007868FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
