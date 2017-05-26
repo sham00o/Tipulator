@@ -14,17 +14,19 @@ class Home: UIViewController {
     var items: [Double]!
 
     @IBOutlet weak var totalField: UITextField!
-    @IBOutlet weak var itemTable: UITableView!
+    @IBOutlet weak var itemCollection: UICollectionView!
     @IBOutlet weak var taxField: UITextField!
     @IBOutlet weak var tipField: UITextField!
     @IBOutlet weak var itemField: UITextField!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var subtractButton: UIButton!
     @IBOutlet weak var detailsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        itemCollection.dataSource = self
+        itemCollection.delegate = self
+        
         items = [Double]()
         activeField = itemField
         dropShadow(activeField)
@@ -36,10 +38,9 @@ class Home: UIViewController {
         super.viewDidLayoutSubviews()
         
         addButton.layer.cornerRadius = addButton.frame.width * 0.5
-        subtractButton.layer.cornerRadius = subtractButton.frame.width * 0.5
     }
     
-    func setDetails(tax: Double, tip: Double, subtotal: Double) {
+    func setDetails(_ tax: Double, tip: Double, subtotal: Double) {
         let subtotalString = String(format: "%.2f", subtotal)
         let taxString = String(format: "%.2f", subtotal*tax)
         let tipString = String(format: "%.2f", subtotal*tip)
@@ -47,7 +48,7 @@ class Home: UIViewController {
         detailsLabel.text = "$\(subtotalString)+$\(taxString)+$\(tipString)"
     }
     
-    func setTotal(value: Double) {
+    func setTotal(_ value: Double) {
         let string = String(format: "%.2f", value)
         totalField.text = "$\(string)"
     }
@@ -64,7 +65,7 @@ class Home: UIViewController {
         setDetails(tax, tip: tip, subtotal: subtotal)
     }
     
-    @IBAction func numberTapped(sender: UIButton) {
+    @IBAction func numberTapped(_ sender: UIButton) {
         let text = activeField.text
         activeField.text = text! + sender.titleLabel!.text!
         if activeField == taxField || activeField == tipField {
@@ -72,71 +73,71 @@ class Home: UIViewController {
         }
     }
     
-    @IBAction func clearTapped(sender: AnyObject) {
+    @IBAction func clearTapped(_ sender: AnyObject) {
         activeField.text = ""
         calculateTotal()
     }
     
-    @IBAction func decimalTapped(sender: AnyObject) {
+    @IBAction func decimalTapped(_ sender: AnyObject) {
         activeField.text = activeField.text! + "."
     }
     
-    @IBAction func addItem(sender: AnyObject) {
+    @IBAction func addItem(_ sender: AnyObject) {
         if let input = itemField.text {
             if let value = Double(input) {
                 items.append(value)
+                itemCollection.reloadData()
                 itemField.text = ""
                 calculateTotal()
-                itemTable.reloadData()
             }
         }
     }
-    
-    @IBAction func removeItem(sender: AnyObject) {
-        if items.count > 0 {
-            items.removeLast()
-            itemTable.reloadData()
-        }
-        calculateTotal()
-    }
-
 }
 
-extension Home: UITableViewDataSource {
+extension Home: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Items"
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let string = NSString(format: "%.2f", items[indexPath.row])
+        let size = string.size(attributes: nil)
+        return CGSize(width: size.width*2.5, height: 25.0)
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+        calculateTotal()
+        collectionView.reloadData()
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("item", forIndexPath: indexPath) as! Item
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! Item
         
-        cell.setLabel(items[indexPath.row])
+        cell.load(items[indexPath.row])
+        cell.layer.cornerRadius = 5
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
     }
 }
 
 extension Home: UITextFieldDelegate {
     
-    func removeShadow(view: UIView) {
-        view.layer.shadowColor = UIColor.clearColor().CGColor
+    func removeShadow(_ view: UIView) {
+        view.layer.shadowColor = UIColor.clear.cgColor
     }
     
-    func dropShadow(view: UIView) {
+    func dropShadow(_ view: UIView) {
         view.layer.masksToBounds = false
         
-        view.layer.shadowColor = UIColor.blackColor().CGColor
+        view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 0.4
         view.layer.shadowRadius = 6
-        view.layer.shadowOffset = CGSizeMake(0.0, 0.0)
+        view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
     }
     
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if activeField != nil {
             removeShadow(activeField)
         }
